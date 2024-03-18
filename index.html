@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script async src="./script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<div>
+			<h1 class="player_indicator" id="player_indicator"></h1>
+		</div>
+		<div class="oponent">
+			<label for="oponent">Select oponent : </label>
+			<select id="oponent" class="dropdown">
+				<option>Please select an option</option>
+				<option value="human">Human</option>
+				<option value="computer">Computer</option>
+			</select>
+		</div>
+		<div class="difficulty" id="difficulty-div">
+			<label for="difficulty">Select difficulty : </label>
+			<select id="difficulty" class="dropdown">
+				<option>Please select an option</option>
+				<option value="easy">Easy</option>
+				<option value="hard">Hard</option>
+			</select>
+		</div>
+
+		<div class="controls">
+			<button id="start">Start</button>
+			<button id="reset">Reset</button>
+		</div>
+
+		<div class="board" id="board">
+			<div class="board_tile remove-left-border remove-top-border"></div>
+			<div class="board_tile remove-top-border"></div>
+			<div class="board_tile remove-right-border remove-top-border"></div>
+			<div class="board_tile remove-left-border"></div>
+			<div class="board_tile"></div>
+			<div class="board_tile remove-right-border"></div>
+			<div class="board_tile remove-left-border remove-bottom-border"></div>
+			<div class="board_tile remove-bottom-border"></div>
+			<div class="board_tile remove-right-border remove-bottom-border"></div>
+		</div>
+	</body>
 </html>
